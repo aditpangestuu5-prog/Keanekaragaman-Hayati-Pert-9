@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Pertemuan 9 | Peran Masyarakat dan Sekolah dalam Konservasi Flora-Fauna</title>
+<style>
+:root {
+  --bg:#f7f8fb;
+  --card:#ffffff;
+  --ink:#172536;
+  --muted:#647386;
+  --primary:#b75a4b;
+  --primary-dark:#65312b;
+  --soft:#ffe9e5;
+  --soft-2:#fff6f3;
+  --accent:#2f8f83;
+  --accent-soft:#e8f7f1;
+  --green:#2f8f83;
+  --red:#c84a4a;
+  --line:#eadbd8;
+  --shadow:0 22px 58px rgba(101,49,43,.14);
+  --shadow-soft:0 12px 34px rgba(101,49,43,.10);
+  --radius:28px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  color:var(--ink);
+  line-height:1.68;
+  background:
+    radial-gradient(circle at 3% 0%,rgba(47,143,131,.14),transparent 35%),
+    radial-gradient(circle at 96% 5%,rgba(183,90,75,.15),transparent 32%),
+    linear-gradient(180deg,#fffdfc,var(--bg));
+}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.progress{position:fixed;top:0;left:0;width:0;height:5px;z-index:999;background:linear-gradient(90deg,var(--primary),var(--accent));transition:.12s}
+header{position:sticky;top:0;z-index:80;background:rgba(247,248,251,.88);backdrop-filter:blur(18px);border-bottom:1px solid rgba(101,49,43,.10)}
+nav{max-width:1180px;margin:auto;padding:14px 22px;display:flex;align-items:center;justify-content:space-between;gap:14px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:950;color:var(--primary-dark);white-space:nowrap;letter-spacing:-.02em}
+.brand-mark{width:40px;height:40px;border-radius:16px;background:linear-gradient(135deg,var(--primary),var(--accent));color:#fff;display:grid;place-items:center;font-weight:950;box-shadow:var(--shadow-soft)}
+.nav-links{display:flex;flex-wrap:wrap;gap:8px;justify-content:flex-end}
+.nav-links a,.btn{
+  border:0;border-radius:999px;padding:9px 14px;background:rgba(255,255,255,.86);
+  color:var(--primary-dark);font-weight:850;box-shadow:inset 0 0 0 1px rgba(101,49,43,.12);
+  cursor:pointer;transition:.2s
+}
+.nav-links a:hover,.btn:hover{transform:translateY(-2px);background:var(--soft)}
+.btn.primary{background:var(--primary);color:#fff;box-shadow:0 16px 32px rgba(183,90,75,.22)}
+.btn.accent{background:var(--accent-soft);color:#145245}
+.container{max-width:1180px;margin:auto;padding:30px 22px 80px}
+section{margin-top:50px;scroll-margin-top:92px}
+.hero{min-height:82vh;display:grid;grid-template-columns:1.02fr .98fr;align-items:center;gap:30px;padding:36px 0 30px}
+.eyebrow{display:inline-flex;padding:8px 14px;margin-bottom:18px;border-radius:999px;background:var(--soft);color:var(--primary-dark);font-size:.92rem;font-weight:900}
+h1{font-size:clamp(2.58rem,5.8vw,5.55rem);line-height:.95;letter-spacing:-.075em;margin-bottom:22px;color:#102334}
+h2{font-size:clamp(1.85rem,3.4vw,3.15rem);line-height:1;letter-spacing:-.055em;color:#102334}
+h3{line-height:1.22;color:#102334}
+.lead{max-width:760px;color:var(--muted);font-size:clamp(1.06rem,1.85vw,1.24rem)}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.hero-panel{min-height:520px;padding:18px;border-radius:38px;background:radial-gradient(circle at 86% 8%,rgba(47,143,131,.20),transparent 32%),linear-gradient(145deg,#fff,var(--soft));box-shadow:var(--shadow);border:1px solid rgba(101,49,43,.10);display:grid;gap:16px;overflow:hidden}
+.hero-photo{position:relative;min-height:350px;border-radius:30px;overflow:hidden;background:#f0ddd9}
+.hero-photo img{width:100%;height:100%;object-fit:cover;aspect-ratio:16/10}
+.hero-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(16,35,52,.02),rgba(16,35,52,.68))}
+.hero-photo-label{position:absolute;left:18px;right:18px;bottom:18px;color:#fff;z-index:2;font-size:clamp(1.35rem,2vw,2rem);font-weight:950;line-height:1.05;letter-spacing:-.04em}
+.question-box{border-radius:24px;background:rgba(255,255,255,.80);border:1px solid rgba(101,49,43,.12);padding:18px;color:var(--primary-dark)}
+.question-box strong{display:block;margin-bottom:6px;font-size:1.05rem}
+.section-title{display:flex;justify-content:space-between;align-items:flex-end;gap:22px;margin-bottom:20px}
+.section-title p{max-width:700px;color:var(--muted)}
+.grid{display:grid;gap:18px}
+.grid-2{grid-template-columns:repeat(2,1fr)}
+.grid-3{grid-template-columns:repeat(3,1fr)}
+.grid-4{grid-template-columns:repeat(4,1fr)}
+.card{background:var(--card);border:1px solid rgba(101,49,43,.09);border-radius:var(--radius);box-shadow:var(--shadow-soft);overflow:hidden}
+.card-pad{padding:22px}
+.card p,.card li{color:var(--muted)}
+.visual-card figure{height:235px;background:#f0ddd9;overflow:hidden}
+.visual-card figure img{width:100%;height:100%;object-fit:cover}
+.visual-card .body{padding:20px 22px 22px}
+.tag{display:inline-flex;margin-bottom:10px;border-radius:999px;background:var(--soft);color:var(--primary-dark);font-weight:850;font-size:.88rem;padding:6px 10px}
+.term-card{padding:22px;background:#fff;border-radius:24px;box-shadow:var(--shadow-soft);border:1px solid rgba(101,49,43,.09)}
+.term-card h3{margin-bottom:8px;font-size:1.14rem}
+.term-card p{color:var(--muted)}
+.story-panel{border-radius:34px;padding:28px;background:linear-gradient(135deg,rgba(183,90,75,.96),rgba(101,49,43,.95)),url("https://commons.wikimedia.org/wiki/Special:FilePath/Benoa_Bali_Indonesia-Mangrove-forest-02.jpg?width=1920") center/cover no-repeat;color:#fff;box-shadow:var(--shadow);overflow:hidden}
+.story-panel h2,.story-panel h3{color:#fff}
+.story-panel p{color:rgba(255,255,255,.88)}
+.story-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:18px}
+.story-item{border-radius:22px;padding:18px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22)}
+.story-item p{font-size:.95rem;color:rgba(255,255,255,.88)}
+.action-card{display:grid;grid-template-rows:auto 1fr;background:#fff;border-radius:30px;box-shadow:var(--shadow-soft);overflow:hidden;border:1px solid rgba(101,49,43,.09)}
+.action-card figure{height:245px;background:#f0ddd9}
+.action-card figure img{width:100%;height:100%;object-fit:cover}
+.action-body{padding:22px}
+.action-body h3{font-size:1.34rem;margin-bottom:8px}
+.action-body p{color:var(--muted);margin-bottom:12px}
+.action-body ul{padding-left:18px;color:var(--muted)}
+.explain-box{border-radius:28px;padding:22px;background:linear-gradient(135deg,#fff,var(--soft));box-shadow:var(--shadow-soft);border:1px solid rgba(101,49,43,.09)}
+.explain-box h3{margin-bottom:8px}
+.explain-box p{color:var(--muted)}
+.step-list{display:grid;gap:12px;margin-top:14px}
+.step-item{display:grid;grid-template-columns:38px 1fr;gap:12px;align-items:start;background:#fff;border:1px solid rgba(101,49,43,.09);border-radius:18px;padding:13px}
+.step-num{width:32px;height:32px;border-radius:12px;background:var(--primary);color:#fff;display:grid;place-items:center;font-weight:950}
+.check-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.check-card{background:#fff;border-radius:24px;padding:20px;box-shadow:var(--shadow-soft);border:1px solid rgba(101,49,43,.09)}
+.check-card h3{margin-bottom:8px}
+.check-card p{color:var(--muted)}
+.case-list{display:grid;gap:18px}
+.case-card{display:grid;grid-template-columns:360px 1fr;gap:0;background:#fff;border-radius:30px;overflow:hidden;box-shadow:var(--shadow-soft);border:1px solid rgba(101,49,43,.09)}
+.case-card figure{min-height:300px;background:#f0ddd9}
+.case-card figure img{width:100%;height:100%;object-fit:cover}
+.case-body{padding:24px}
+.case-body h3{font-size:1.45rem;margin-bottom:8px}
+.case-body p{color:var(--muted);margin-bottom:12px}
+.case-points{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
+.case-points div{background:#fff9f7;border:1px solid rgba(101,49,43,.08);border-radius:18px;padding:13px}
+.case-points strong{display:block;color:var(--primary-dark);margin-bottom:4px}
+.table-wrap{overflow-x:auto;border-radius:22px;box-shadow:var(--shadow-soft);border:1px solid rgba(101,49,43,.10);background:#fff}
+table{width:100%;border-collapse:collapse;min-width:920px;background:#fff}
+th,td{padding:16px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+th{background:var(--primary);color:#fff;font-size:.92rem}
+td{color:var(--muted)}
+tr:last-child td{border-bottom:0}
+.practice-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.practice-card{background:#fff;border-radius:26px;padding:20px;box-shadow:var(--shadow-soft);border:1px solid rgba(101,49,43,.09)}
+.practice-card h3{margin-bottom:8px}
+.practice-card p{color:var(--muted)}
+.answer-pattern{border-left:6px solid var(--accent);background:var(--accent-soft);border-radius:18px;padding:16px;margin-top:16px;color:#145245;font-weight:780}
+.activity{display:grid;grid-template-columns:.9fr 1.1fr;gap:18px}
+.activity-display{min-height:390px;border-radius:34px;padding:24px;background:radial-gradient(circle at 80% 12%,rgba(47,143,131,.20),transparent 35%),linear-gradient(145deg,#fff,var(--soft));display:grid;align-content:center;justify-items:center;text-align:center;box-shadow:var(--shadow-soft)}
+.activity-photo{width:min(100%,350px);aspect-ratio:16/10;border-radius:26px;overflow:hidden;background:white;margin-bottom:18px;box-shadow:0 16px 32px rgba(101,49,43,.16);border:8px solid rgba(255,255,255,.72)}
+.activity-photo img{width:100%;height:100%;object-fit:cover}
+.pill{display:inline-flex;align-items:center;border-radius:999px;padding:7px 12px;background:var(--soft);color:var(--primary-dark);font-size:.9rem;font-weight:850}
+.option{display:block;width:100%;text-align:left;border:0;border-radius:18px;padding:13px 15px;margin-top:10px;background:#fff6f3;color:var(--ink);font-weight:800;cursor:pointer;transition:.16s}
+.option:hover{transform:translateX(4px);background:var(--soft)}
+.option.correct{background:#dcf5ef;color:#125344;box-shadow:inset 0 0 0 2px var(--green)}
+.option.wrong{background:#ffe4e4;color:#7a1f1f;box-shadow:inset 0 0 0 2px var(--red)}
+.option:disabled{cursor:default}
+.feedback-box{margin-top:12px;padding:14px;border-radius:18px;background:var(--accent-soft);color:#145245;font-weight:800;display:none}
+.feedback-box.show{display:block}
+.quiz-card{margin-bottom:16px}
+.quiz-card h3{margin-bottom:13px}
+.score-board{position:sticky;top:84px;border-radius:28px;padding:22px;background:linear-gradient(135deg,#fff,var(--soft));box-shadow:var(--shadow-soft);border:1px solid rgba(101,49,43,.10)}
+.score-number{font-size:4rem;font-weight:950;letter-spacing:-.08em;line-height:1;color:var(--primary-dark)}
+.reflection-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.reflection-card{background:#fff;border-radius:24px;padding:18px;box-shadow:var(--shadow-soft);border:1px solid rgba(101,49,43,.09)}
+.reflection-card h3{margin-bottom:8px}
+.reflection-card p{color:var(--muted)}
+.final-summary{border-radius:34px;padding:30px;background:linear-gradient(135deg,var(--primary-dark),#102334);color:#fff;box-shadow:var(--shadow)}
+.final-summary h2,.final-summary h3,.final-summary p{color:#fff}
+footer{margin-top:50px;padding-top:22px;text-align:center;color:var(--muted);font-size:.92rem}
+.image-error{background:linear-gradient(135deg,var(--soft),#fff);display:grid;place-items:center;min-height:220px}
+.image-error:after{content:"Gambar tidak terbaca";color:var(--primary-dark);font-weight:900}
+
+.quiz-explain{display:none;margin-top:14px;padding:14px 16px;border-radius:18px;background:var(--accent-soft);color:#145245;font-weight:760}
+.quiz-explain.show{display:block}
+.quiz-explain strong{color:#0e3d34}
+.quiz-card{margin-bottom:16px}
+
+@media(max-width:980px){
+  .hero,.grid-2,.grid-3,.grid-4,.story-grid,.activity,.reflection-grid,.practice-grid,.check-grid{grid-template-columns:1fr}
+  .section-title{align-items:flex-start;flex-direction:column}
+  nav{align-items:flex-start;flex-direction:column}
+  .nav-links{justify-content:flex-start}
+  .case-card{grid-template-columns:1fr}
+  .case-card figure{height:280px}
+  .case-points{grid-template-columns:1fr}
+  .score-board{position:static}
+}
+@media(max-width:640px){
+  .container{padding-left:16px;padding-right:16px}
+  .hero-panel{min-height:440px}
+}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<header>
+  <nav>
+    <div class="brand"><div class="brand-mark">GEO</div>Geografi XI/F</div>
+    <div class="nav-links">
+      <a href="#awal">Awal</a>
+      <a href="#masalah">Masalah</a>
+      <a href="#pengertian">Pengertian</a>
+      <a href="#aksi">Aksi</a>
+      <a href="#kampanye">Kampanye</a>
+      <a href="#kasus">Kasus</a>
+      <a href="#kuis">Kuis</a>
+      <a href="#refleksi">Refleksi</a>
+    </div>
+  </nav>
+</header>
+
+<main class="container">
+<section class="hero" id="awal">
+  <div>
+    <div class="eyebrow">Bahan Ajar Interaktif • Pertemuan 9 • 3 JP</div>
+    <h1>Peran Masyarakat dan Sekolah dalam Konservasi Flora-Fauna</h1>
+    <p class="lead">Setelah memahami kawasan konservasi, sekarang kita masuk ke peran manusia di luar kawasan: warga sekolah, masyarakat, dan kebiasaan sehari-hari. Konservasi tidak selalu dimulai dari aksi besar. Aksi kecil yang aman, realistis, dan terukur juga bisa membantu pelestarian.</p>
+    <div class="hero-actions">
+      <a class="btn primary" href="#masalah">Mulai dari Masalah</a>
+      <a class="btn accent" href="#aksi">Pilih Aksi Realistis</a>
+      <a class="btn" href="#kuis">Kerjakan Kuis</a>
+      <button class="btn" onclick="window.print()">Cetak Ringkasan</button>
+    </div>
+  </div>
+  <aside class="hero-panel">
+    <figure class="hero-photo">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Benoa_Bali_Indonesia-Mangrove-forest-02.jpg?width=1920" alt="Hutan mangrove sebagai habitat yang perlu dijaga" fetchpriority="high" onerror="imageFallback(this)">
+      <figcaption class="hero-photo-label">Konservasi bukan hanya tugas petugas kawasan. Kebiasaan warga sekolah juga punya peran.</figcaption>
+    </figure>
+    <div class="question-box">
+      <strong>Masalah utama</strong>
+      Bagaimana masyarakat dan sekolah dapat berperan menjaga kelestarian flora dan fauna melalui aksi sederhana yang realistis?
+    </div>
+  </aside>
+</section>
+
+<section id="masalah">
+  <div class="section-title">
+    <h2>Mulai dari Masalah Sekitar</h2>
+    <p>Masalah konservasi tidak selalu jauh. Beberapa masalah dapat ditemukan di sekolah, media sosial, tempat wisata, atau lingkungan tempat tinggal.</p>
+  </div>
+  <div class="grid grid-4">
+    <article class="card visual-card">
+      <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Cenderawasih_Bird_-_Papua.jpg?width=900" alt="Cenderawasih sebagai spesies kunci Indonesia" loading="lazy" onerror="imageFallback(this)"></figure>
+      <div class="body">
+        <span class="tag">Perdagangan ilegal</span>
+        <h3>Satwa dilindungi dipromosikan</h3>
+        <p>Kurangnya pengetahuan membuat orang tidak peka terhadap konten jual beli satwa dilindungi.</p>
+      </div>
+    </article>
+    <article class="card visual-card">
+      <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Benoa_Bali_Indonesia-Mangrove-forest-02.jpg?width=1920" alt="Ekosistem mangrove" loading="lazy" onerror="imageFallback(this)"></figure>
+      <div class="body">
+        <span class="tag">Sampah</span>
+        <h3>Habitat tertekan sampah</h3>
+        <p>Sampah plastik dapat mencemari habitat dan mengganggu makhluk hidup di pesisir, sungai, atau taman.</p>
+      </div>
+    </article>
+    <article class="card visual-card">
+      <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Tropical_rain_forest.jpg?width=1920" alt="Hutan hujan tropis" loading="lazy" onerror="imageFallback(this)"></figure>
+      <div class="body">
+        <span class="tag">Ruang hijau</span>
+        <h3>Tanaman lokal kurang dikenal</h3>
+        <p>Warga sekolah sering melewati tanaman, tetapi tidak mengetahui nama, manfaat, atau cara merawatnya.</p>
+      </div>
+    </article>
+    <article class="card visual-card">
+      <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Komodo_dragon_(Varanus_komodoensis).jpg?width=1920" alt="Komodo" loading="lazy" onerror="imageFallback(this)"></figure>
+      <div class="body">
+        <span class="tag">Etika wisata</span>
+        <h3>Wisata alam tidak tertib</h3>
+        <p>Memberi makan satwa, terlalu dekat, atau membuang sampah dapat mengganggu konservasi.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="pengertian">
+  <div class="section-title">
+    <h2>Pengertian Kunci</h2>
+    <p>Istilah berikut membantu menyusun aksi konservasi sekolah yang bukan hanya ramai, tetapi juga bermakna.</p>
+  </div>
+  <div class="grid grid-3">
+    <div class="term-card"><h3>Partisipasi masyarakat</h3><p>Keterlibatan warga dalam menjaga lingkungan melalui kebiasaan, edukasi, pengawasan, dan dukungan terhadap aturan perlindungan.</p></div>
+    <div class="term-card"><h3>Kampanye konservasi</h3><p>Kegiatan menyampaikan pesan untuk mengubah pengetahuan, sikap, atau perilaku terkait pelestarian flora-fauna.</p></div>
+    <div class="term-card"><h3>Aksi realistis</h3><p>Kegiatan yang aman, sesuai waktu, sesuai kemampuan siswa, dan dapat dilakukan di lingkungan sekolah atau sekitar.</p></div>
+    <div class="term-card"><h3>Indikator keberhasilan</h3><p>Bukti yang dapat diamati untuk menilai apakah aksi berhasil, misalnya jumlah peserta, poster terpasang, atau perubahan kebiasaan.</p></div>
+    <div class="term-card"><h3>Etika lingkungan</h3><p>Prinsip berperilaku agar tidak merusak habitat, menyakiti satwa, mengambil tumbuhan, atau meninggalkan sampah.</p></div>
+    <div class="term-card"><h3>Pelaporan aman</h3><p>Tindakan melaporkan dugaan perdagangan atau perburuan satwa/tumbuhan dilindungi melalui jalur tepat tanpa main hakim sendiri.</p></div>
+  </div>
+</section>
+
+<section>
+  <div class="story-panel">
+    <div class="section-title" style="margin-bottom:10px;">
+      <h2>Mengapa Sekolah Bisa Berperan?</h2>
+      <p>Sekolah adalah ruang belajar sekaligus ruang pembiasaan. Dari sekolah, siswa bisa belajar mengubah informasi menjadi tindakan.</p>
+    </div>
+    <div class="story-grid">
+      <div class="story-item"><h3>1. Edukasi</h3><p>Membantu teman memahami spesies dilindungi, habitat, dan ancaman.</p></div>
+      <div class="story-item"><h3>2. Kebiasaan</h3><p>Mengurangi plastik, memilah sampah, dan menjaga tanaman sekitar.</p></div>
+      <div class="story-item"><h3>3. Kampanye</h3><p>Mengajak warga sekolah melakukan aksi yang aman dan jelas.</p></div>
+      <div class="story-item"><h3>4. Pelaporan</h3><p>Mengenali dugaan aktivitas ilegal dan melapor melalui jalur aman.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="aksi">
+  <div class="section-title">
+    <h2>Contoh Aksi Konservasi Sekolah</h2>
+    <p>Pilih aksi yang sesuai masalah, aman dilakukan, dan punya indikator. Tidak semua aksi besar cocok untuk siswa.</p>
+  </div>
+  <div class="grid grid-3">
+    <article class="action-card">
+      <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Cenderawasih_Bird_-_Papua.jpg?width=900" alt="Cenderawasih" loading="lazy" onerror="imageFallback(this)"></figure>
+      <div class="action-body">
+        <span class="tag">Edukasi satwa</span>
+        <h3>Kampanye anti perdagangan satwa</h3>
+        <p>Tujuannya meningkatkan pengetahuan warga sekolah tentang satwa dilindungi dan bahaya perdagangan ilegal.</p>
+        <ul>
+          <li>poster atau konten digital;</li>
+          <li>mini kuis setelah kampanye;</li>
+          <li>pesan singkat dan tidak menakut-nakuti.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="action-card">
+      <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Benoa_Bali_Indonesia-Mangrove-forest-02.jpg?width=1920" alt="Hutan mangrove" loading="lazy" onerror="imageFallback(this)"></figure>
+      <div class="action-body">
+        <span class="tag">Habitat</span>
+        <h3>Gerakan pengurangan sampah plastik</h3>
+        <p>Tujuannya mengurangi perilaku yang dapat mencemari habitat dan membangun kebiasaan ramah lingkungan.</p>
+        <ul>
+          <li>bawa tumbler;</li>
+          <li>pemilahan sampah;</li>
+          <li>pengamatan jumlah sampah harian.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="action-card">
+      <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Tropical_rain_forest.jpg?width=1920" alt="Hutan hujan tropis" loading="lazy" onerror="imageFallback(this)"></figure>
+      <div class="action-body">
+        <span class="tag">Ruang hijau</span>
+        <h3>Pojok tumbuhan lokal</h3>
+        <p>Tujuannya mengenalkan tanaman sekitar, manfaatnya, dan pentingnya perawatan ruang hijau sekolah.</p>
+        <ul>
+          <li>label nama tanaman;</li>
+          <li>jadwal perawatan;</li>
+          <li>poster manfaat tanaman.</li>
+        </ul>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="kampanye">
+  <div class="section-title">
+    <h2>Merancang Kampanye yang Tidak Asal Ramai</h2>
+    <p>Kampanye yang baik tidak hanya “bagus dilihat”, tetapi membuat orang memahami masalah dan tahu tindakan yang harus dilakukan.</p>
+  </div>
+  <div class="grid grid-2">
+    <div class="explain-box">
+      <h3>Rumus kampanye konservasi</h3>
+      <div class="step-list">
+        <div class="step-item"><div class="step-num">1</div><div><strong>Masalah</strong><p>Apa perilaku atau kondisi yang ingin diubah?</p></div></div>
+        <div class="step-item"><div class="step-num">2</div><div><strong>Sasaran</strong><p>Siapa yang perlu diajak: siswa, kelas, kantin, warga sekolah, atau komunitas?</p></div></div>
+        <div class="step-item"><div class="step-num">3</div><div><strong>Pesan utama</strong><p>Buat kalimat singkat, jelas, dan tidak menggurui.</p></div></div>
+        <div class="step-item"><div class="step-num">4</div><div><strong>Media</strong><p>Pilih poster, video pendek, mading, presentasi kelas, label tanaman, atau aksi langsung.</p></div></div>
+        <div class="step-item"><div class="step-num">5</div><div><strong>Indikator</strong><p>Tentukan bukti keberhasilan yang dapat diamati.</p></div></div>
+      </div>
+    </div>
+    <div class="explain-box">
+      <h3>Contoh pesan yang lebih kuat</h3>
+      <p><strong>Kurang kuat:</strong> “Ayo jaga satwa.”</p>
+      <p><strong>Lebih kuat:</strong> “Jangan membeli atau membagikan konten jual beli satwa dilindungi. Catat bukti dan laporkan melalui jalur yang aman.”</p>
+      <br>
+      <p><strong>Kurang kuat:</strong> “Buang sampah pada tempatnya.”</p>
+      <p><strong>Lebih kuat:</strong> “Kurangi plastik sekali pakai di sekolah karena sampah dapat terbawa ke selokan, sungai, dan habitat makhluk hidup.”</p>
+    </div>
+  </div>
+</section>
+
+<section id="kasus">
+  <div class="section-title">
+    <h2>Studi Kasus Aksi Sekolah</h2>
+    <p>Baca kasus dengan pola: masalah, aksi, sasaran, indikator, dan catatan keamanan.</p>
+  </div>
+  <div class="case-list">
+    <article class="case-card">
+      <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Cenderawasih_Bird_-_Papua.jpg?width=900" alt="Cenderawasih" loading="lazy" onerror="imageFallback(this)"></figure>
+      <div class="case-body">
+        <h3>1. Kampanye anti perdagangan satwa</h3>
+        <p>Siswa menemukan banyak konten satwa liar di media sosial. Tidak semua orang paham bahwa satwa tertentu dilindungi dan tidak boleh diperjualbelikan.</p>
+        <div class="case-points">
+          <div><strong>Masalah</strong> Rendahnya literasi satwa dilindungi.</div>
+          <div><strong>Aksi</strong> Poster edukasi dan mini kuis.</div>
+          <div><strong>Indikator</strong> Jumlah siswa membaca, skor kuis, tanggapan siswa.</div>
+          <div><strong>Keamanan</strong> Tidak melakukan konfrontasi; gunakan jalur pelaporan aman.</div>
+        </div>
+      </div>
+    </article>
+
+    <article class="case-card">
+      <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Benoa_Bali_Indonesia-Mangrove-forest-02.jpg?width=1920" alt="Mangrove" loading="lazy" onerror="imageFallback(this)"></figure>
+      <div class="case-body">
+        <h3>2. Pengurangan sampah plastik</h3>
+        <p>Sampah plastik di sekolah dapat terbawa ke selokan dan sungai. Walaupun sekolah jauh dari hutan, kebiasaan membuang sampah tetap berhubungan dengan kualitas lingkungan.</p>
+        <div class="case-points">
+          <div><strong>Masalah</strong> Kebiasaan plastik sekali pakai.</div>
+          <div><strong>Aksi</strong> Kampanye bawa tumbler dan pemilahan.</div>
+          <div><strong>Indikator</strong> Jumlah siswa terlibat dan pengamatan sampah harian.</div>
+          <div><strong>Keamanan</strong> Aksi dilakukan dengan ajakan positif, bukan mempermalukan orang.</div>
+        </div>
+      </div>
+    </article>
+
+    <article class="case-card">
+      <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Tropical_rain_forest.jpg?width=1920" alt="Hutan tropis" loading="lazy" onerror="imageFallback(this)"></figure>
+      <div class="case-body">
+        <h3>3. Pojok tumbuhan lokal</h3>
+        <p>Tanaman di sekolah sering dianggap hanya hiasan. Padahal tanaman dapat menjadi media belajar tentang flora, habitat, manfaat ekologis, dan tanggung jawab perawatan.</p>
+        <div class="case-points">
+          <div><strong>Masalah</strong> Tanaman lokal kurang dikenal dan kurang dirawat.</div>
+          <div><strong>Aksi</strong> Label tanaman, poster manfaat, jadwal perawatan.</div>
+          <div><strong>Indikator</strong> Jumlah label terpasang, jadwal berjalan, tanaman tetap hidup.</div>
+          <div><strong>Keamanan</strong> Pilih tanaman aman dan area yang tidak mengganggu aktivitas sekolah.</div>
+        </div>
+      </div>
+    </article>
+
+    <article class="case-card">
+      <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Komodo_dragon_(Varanus_komodoensis).jpg?width=1920" alt="Komodo" loading="lazy" onerror="imageFallback(this)"></figure>
+      <div class="case-body">
+        <h3>4. Edukasi etika wisata alam</h3>
+        <p>Banyak orang berwisata ke alam tanpa memahami etika. Siswa dapat membuat kampanye tentang jarak aman dari satwa, tidak memberi makan satwa liar, dan membawa kembali sampah.</p>
+        <div class="case-points">
+          <div><strong>Masalah</strong> Perilaku wisata yang dapat mengganggu satwa.</div>
+          <div><strong>Aksi</strong> Poster etika wisata dan simulasi “boleh/tidak boleh”.</div>
+          <div><strong>Indikator</strong> Jumlah peserta, hasil kuis, komitmen perilaku.</div>
+          <div><strong>Keamanan</strong> Pesan dibuat informatif dan tidak mengajak siswa mendekati satwa liar.</div>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="indikator">
+  <div class="section-title">
+    <h2>Menilai Aksi: Realistis atau Tidak?</h2>
+    <p>Aksi yang baik harus aman, relevan, terukur, dan sesuai kemampuan siswa.</p>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Ide aksi</th>
+          <th>Realistis?</th>
+          <th>Indikator sederhana</th>
+          <th>Catatan keamanan</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Poster anti perdagangan satwa dilindungi</td>
+          <td><strong>Realistis</strong></td>
+          <td>Jumlah poster, hasil kuis, tanggapan siswa.</td>
+          <td>Jangan menyebarkan data pribadi pelaku; fokus pada edukasi dan jalur pelaporan.</td>
+        </tr>
+        <tr>
+          <td>Menanam dan merawat tumbuhan lokal di sekolah</td>
+          <td><strong>Realistis dengan pengawasan</strong></td>
+          <td>Jumlah tanaman hidup, jadwal perawatan, dokumentasi pertumbuhan.</td>
+          <td>Pilih tanaman aman dan lokasi yang disetujui sekolah.</td>
+        </tr>
+        <tr>
+          <td>Menangkap pelaku perdagangan satwa</td>
+          <td><strong>Tidak realistis dan berbahaya</strong></td>
+          <td>Tidak sesuai untuk siswa.</td>
+          <td>Siswa cukup mencatat informasi dan melapor melalui jalur aman.</td>
+        </tr>
+        <tr>
+          <td>Kampanye bawa tumbler dan pengurangan plastik</td>
+          <td><strong>Realistis</strong></td>
+          <td>Jumlah peserta, pengamatan sampah harian, dokumentasi kegiatan.</td>
+          <td>Gunakan ajakan positif, bukan mempermalukan teman.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="latihan">
+  <div class="section-title">
+    <h2>Latihan Menyusun Aksi</h2>
+    <p>Gunakan pola: masalah, aksi, sasaran, indikator, dan catatan keamanan.</p>
+  </div>
+  <div class="practice-grid">
+    <div class="practice-card">
+      <h3>Kasus 1: Banyak plastik sekali pakai</h3>
+      <p>Di sekolah, banyak siswa membeli minuman kemasan sekali pakai dan sampahnya sering terlihat setelah istirahat.</p>
+      <div class="answer-pattern">Tantangan: Rancang aksi pengurangan plastik yang aman, realistis, dan punya indikator.</div>
+    </div>
+    <div class="practice-card">
+      <h3>Kasus 2: Tanaman tidak dikenal</h3>
+      <p>Ada beberapa tanaman di sekolah, tetapi siswa tidak tahu nama dan manfaatnya. Tanaman juga belum punya jadwal perawatan.</p>
+      <div class="answer-pattern">Tantangan: Rancang aksi pojok tumbuhan lokal dengan sasaran dan bukti keberhasilan.</div>
+    </div>
+    <div class="practice-card">
+      <h3>Kasus 3: Konten jual beli satwa</h3>
+      <p>Siswa melihat konten jual beli satwa liar di media sosial. Mereka bingung harus melakukan apa secara aman.</p>
+      <div class="answer-pattern">Tantangan: Buat rencana edukasi dan pelaporan aman tanpa melakukan konfrontasi.</div>
+    </div>
+  </div>
+</section>
+
+<section id="aktivitas">
+  <div class="section-title">
+    <h2>Pilih Aksi Realistis</h2>
+    <p>Baca situasi, lalu tentukan apakah aksi tersebut realistis, kurang realistis, atau berbahaya.</p>
+  </div>
+  <div class="activity">
+    <div class="activity-display">
+      <figure class="activity-photo">
+        <img id="gameImage" src="https://commons.wikimedia.org/wiki/Special:FilePath/Cenderawasih_Bird_-_Papua.jpg?width=900" alt="Situasi aksi konservasi" loading="lazy" onerror="imageFallback(this)">
+      </figure>
+      <h3 id="gameName">Membuat poster edukasi tentang satwa dilindungi</h3>
+      <p>Kategori aksi ini apa?</p>
+      <div style="display:flex;justify-content:center;margin-top:12px"><span class="pill" id="gameCount">1 dari 6</span></div>
+    </div>
+    <div class="card card-pad">
+      <h3>Pilih jawaban:</h3>
+      <div id="gameOptions"></div>
+      <div class="feedback-box" id="gameFeedback"></div>
+      <div class="hero-actions" style="margin-top:16px">
+        <button class="btn primary" onclick="nextGame()">Soal Berikutnya</button>
+        <button class="btn" onclick="resetGame()">Ulangi</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section id="kuis">
+  <div class="section-title">
+    <h2>Kuis Analisis</h2>
+    <p>Baca kasus, lalu pilih tindakan yang paling aman, realistis, dan berdampak.</p>
+  </div>
+
+  <div class="card card-pad" style="margin-bottom:18px;">
+    <h3>Skor: <span id="quizScore">0</span>/6</h3>
+    <p id="quizFeedback">Jawab pertanyaan, lalu baca pembahasan singkatnya.</p>
+    <div class="hero-actions" style="margin-top:14px">
+      <button class="btn primary" onclick="resetQuiz()">Ulangi Kuis</button>
+    </div>
+  </div>
+
+  <div>
+    <div class="card card-pad quiz-card" data-answer="b" data-explain="Aksi konservasi di sekolah sebaiknya dekat dengan masalah, aman dilakukan, dan bisa dipantau. Pengurangan plastik dapat diukur dari pengamatan sampah dan perubahan kebiasaan.">
+      <h3>1. Setelah jam istirahat, banyak sampah plastik terlihat di sekitar taman sekolah. Aksi yang paling tepat dilakukan siswa adalah...</h3>
+      <button class="option" data-option="a">Menyalahkan petugas kebersihan karena taman terlihat kotor.</button>
+      <button class="option" data-option="b">Mengajak siswa mengurangi plastik sekali pakai, menyediakan pemilahan, dan memantau sampah selama beberapa hari.</button>
+      <button class="option" data-option="c">Membakar sampah agar cepat hilang.</button>
+      <button class="option" data-option="d">Membiarkan sampah karena akan dibersihkan orang lain.</button>
+      <div class="quiz-explain"></div>
+    </div>
+
+    <div class="card card-pad quiz-card" data-answer="d" data-explain="Jika menemukan konten jual beli satwa dilindungi, siswa tidak perlu melakukan konfrontasi. Sikap aman adalah tidak menyebarkan ulang dan melapor melalui jalur yang tepat.">
+      <h3>2. Seorang siswa melihat konten jual beli satwa dilindungi di media sosial. Tindakan yang paling aman dan bertanggung jawab adalah...</h3>
+      <button class="option" data-option="a">Membeli satwa agar bisa diselamatkan sendiri.</button>
+      <button class="option" data-option="b">Membagikan unggahan agar ramai dibicarakan.</button>
+      <button class="option" data-option="c">Menyerang akun tersebut bersama teman-teman.</button>
+      <button class="option" data-option="d">Menyimpan informasi seperlunya, tidak menyebarkan ulang, dan melapor melalui jalur aman.</button>
+      <div class="quiz-explain"></div>
+    </div>
+
+    <div class="card card-pad quiz-card" data-answer="a" data-explain="Tanaman sekolah dapat menjadi media belajar jika diberi informasi dan dirawat. Kegiatan perlu menggabungkan label, informasi singkat, dan jadwal perawatan.">
+      <h3>3. Tanaman di halaman sekolah cukup banyak, tetapi siswa tidak tahu nama atau manfaatnya. Beberapa tanaman juga kurang terawat. Proyek kecil yang paling sesuai adalah...</h3>
+      <button class="option" data-option="a">Membuat label tanaman lokal, informasi manfaat singkat, dan jadwal perawatan sederhana.</button>
+      <button class="option" data-option="b">Mengganti tanaman dengan tanaman plastik agar tidak perlu dirawat.</button>
+      <button class="option" data-option="c">Mencabut tanaman yang tidak dikenal.</button>
+      <button class="option" data-option="d">Membuat lomba foto tanaman tanpa informasi apa pun.</button>
+      <div class="quiz-explain"></div>
+    </div>
+
+    <div class="card card-pad quiz-card" data-answer="c" data-explain="Pesan kampanye yang baik harus spesifik, jelas, dan memberi arahan tindakan. Slogan umum kurang membantu karena tidak memberi langkah nyata.">
+      <h3>4. Kelompok akan membuat kampanye tentang satwa dilindungi. Pesan yang paling kuat adalah...</h3>
+      <button class="option" data-option="a">“Satwa itu bagus.”</button>
+      <button class="option" data-option="b">“Ayo sayangi alam.”</button>
+      <button class="option" data-option="c">“Jangan membeli atau membagikan konten jual beli satwa dilindungi; simpan informasi seperlunya dan laporkan secara aman.”</button>
+      <button class="option" data-option="d">“Semua hewan lucu boleh dipelihara.”</button>
+      <div class="quiz-explain"></div>
+    </div>
+
+    <div class="card card-pad quiz-card" data-answer="b" data-explain="Aksi perlu bukti sederhana agar hasilnya bisa dilihat. Jumlah peserta, catatan sebelum-sesudah, dan tanggapan siswa dapat menjadi bukti.">
+      <h3>5. Kelompok sudah melakukan kampanye pengurangan plastik. Bukti yang paling tepat dikumpulkan adalah...</h3>
+      <button class="option" data-option="a">Jumlah warna yang dipakai dalam poster.</button>
+      <button class="option" data-option="b">Jumlah peserta, pengamatan sampah sebelum-sesudah, dan tanggapan siswa.</button>
+      <button class="option" data-option="c">Jumlah foto selfie anggota kelompok.</button>
+      <button class="option" data-option="d">Pendapat satu anggota tanpa pengamatan.</button>
+      <div class="quiz-explain"></div>
+    </div>
+
+    <div class="card card-pad quiz-card" data-answer="d" data-explain="Aksi lingkungan perlu aman dan realistis. Target terlalu luas tanpa izin, alat, dan pendamping dapat berisiko serta sulit berhasil.">
+      <h3>6. Kelompok ingin membersihkan kawasan mangrove yang sangat luas dalam satu hari tanpa izin, alat keselamatan, dan pendamping. Penilaian yang paling tepat adalah...</h3>
+      <button class="option" data-option="a">Sangat tepat, karena target yang luas pasti lebih baik.</button>
+      <button class="option" data-option="b">Tepat, karena izin dan alat tidak diperlukan dalam aksi lingkungan.</button>
+      <button class="option" data-option="c">Tepat, asalkan dokumentasinya banyak.</button>
+      <button class="option" data-option="d">Kurang realistis dan berisiko; target perlu diperkecil, izin disiapkan, alat disediakan, dan pendamping dilibatkan.</button>
+      <div class="quiz-explain"></div>
+    </div>
+  </div>
+</section>
+
+
+<section id="refleksi">
+  <div class="section-title">
+    <h2>Refleksi Individu</h2>
+    <p>Gunakan bagian ini untuk mengecek pemahaman sebelum menutup pertemuan.</p>
+  </div>
+  <div class="reflection-grid">
+    <div class="reflection-card">
+      <h3>Aksi paling mungkin</h3>
+      <p>Aksi konservasi apa yang paling mungkin dilakukan di kelas atau sekolahmu?</p>
+    </div>
+    <div class="reflection-card">
+      <h3>Sasaran aksi</h3>
+      <p>Siapa yang perlu diajak agar aksi konservasi sekolah lebih berhasil?</p>
+    </div>
+    <div class="reflection-card">
+      <h3>Bukti keberhasilan</h3>
+      <p>Bukti apa yang dapat menunjukkan bahwa aksi konservasi tidak hanya ramai, tetapi berdampak?</p>
+    </div>
+  </div>
+</section>
+
+<section id="penutup">
+  <div class="final-summary">
+    <div class="section-title" style="margin-bottom:12px">
+      <h2>Kesimpulan Inti</h2>
+      <p>Kesimpulan diletakkan di akhir setelah pengamatan, pengertian, contoh aksi, kampanye, studi kasus, latihan, kuis, dan refleksi.</p>
+    </div>
+    <div class="grid grid-2">
+      <div>
+        <h3>Konservasi bisa dimulai dari sekolah</h3>
+        <p>Masyarakat dan sekolah dapat membantu konservasi melalui edukasi, kebiasaan ramah lingkungan, pengurangan perilaku merusak, dan pelaporan aman terhadap aktivitas ilegal.</p>
+      </div>
+      <div>
+        <h3>Aksi kecil harus tetap terukur</h3>
+        <p>Aksi konservasi yang baik tidak harus besar, tetapi harus jelas masalahnya, aman dilakukan, punya sasaran, dan memiliki indikator keberhasilan yang dapat diamati.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Bahan ajar interaktif Geografi SMA • Pertemuan 9 • Peran Masyarakat dan Sekolah dalam Konservasi Flora-Fauna</p>
+</footer>
+</main>
+
+<script>
+const progress=document.getElementById('progress');
+window.addEventListener('scroll',()=>{
+  const top=window.scrollY;
+  const h=document.body.scrollHeight-window.innerHeight;
+  progress.style.width=(h>0?top/h*100:0)+'%';
+});
+function imageFallback(img){
+  const parent=img.closest('figure') || img.parentElement;
+  if(parent) parent.classList.add('image-error');
+  img.remove();
+}
+const gameItems=[
+  {image:'https://commons.wikimedia.org/wiki/Special:FilePath/Cenderawasih_Bird_-_Papua.jpg?width=900', name:'Membuat poster edukasi tentang satwa dilindungi', answer:'Realistis', options:['Realistis','Kurang realistis','Berbahaya'], feedback:'Benar. Poster edukasi aman, bisa dilakukan siswa, dan indikatornya dapat dibuat.'},
+  {image:'https://commons.wikimedia.org/wiki/Special:FilePath/Benoa_Bali_Indonesia-Mangrove-forest-02.jpg?width=1920', name:'Kampanye bawa tumbler untuk mengurangi plastik sekali pakai', answer:'Realistis', options:['Realistis','Kurang realistis','Berbahaya'], feedback:'Benar. Aksi ini dekat dengan kebiasaan sekolah dan dapat diukur.'},
+  {image:'https://commons.wikimedia.org/wiki/Special:FilePath/Cenderawasih_Bird_-_Papua.jpg?width=900', name:'Menangkap sendiri pelaku perdagangan satwa', answer:'Berbahaya', options:['Realistis','Kurang realistis','Berbahaya'], feedback:'Benar. Ini berbahaya dan bukan kewenangan siswa. Lebih aman melapor melalui jalur tepat.'},
+  {image:'https://commons.wikimedia.org/wiki/Special:FilePath/Tropical_rain_forest.jpg?width=1920', name:'Membuat label nama tanaman dan jadwal perawatan', answer:'Realistis', options:['Realistis','Kurang realistis','Berbahaya'], feedback:'Benar. Ini aksi sederhana, aman, dan bisa punya indikator.'},
+  {image:'https://commons.wikimedia.org/wiki/Special:FilePath/Komodo_dragon_(Varanus_komodoensis).jpg?width=1920', name:'Mendekati satwa liar agar bisa membuat konten edukasi', answer:'Berbahaya', options:['Realistis','Kurang realistis','Berbahaya'], feedback:'Benar. Edukasi tidak boleh dilakukan dengan cara membahayakan diri atau mengganggu satwa.'},
+  {image:'https://commons.wikimedia.org/wiki/Special:FilePath/Benoa_Bali_Indonesia-Mangrove-forest-02.jpg?width=1920', name:'Membersihkan seluruh kawasan mangrove besar tanpa izin dan alat aman', answer:'Kurang realistis', options:['Realistis','Kurang realistis','Berbahaya'], feedback:'Benar. Aksi lingkungan harus menyesuaikan izin, alat, keamanan, dan kemampuan kelompok.'}
+];
+let currentGame=0,gameAnswered=false;
+function renderGame(){
+  const item=gameItems[currentGame];
+  const img=document.getElementById('gameImage');
+  img.src=item.image; img.alt=item.name;
+  document.getElementById('gameName').textContent=item.name;
+  document.getElementById('gameCount').textContent=`${currentGame+1} dari ${gameItems.length}`;
+  const options=document.getElementById('gameOptions');
+  const feedback=document.getElementById('gameFeedback');
+  feedback.classList.remove('show'); feedback.textContent=''; options.innerHTML='';
+  item.options.forEach(opt=>{
+    const btn=document.createElement('button');
+    btn.className='option'; btn.textContent=opt; btn.onclick=()=>answerGame(btn,opt);
+    options.appendChild(btn);
+  });
+  gameAnswered=false;
+}
+function answerGame(button,choice){
+  if(gameAnswered)return; gameAnswered=true;
+  const item=gameItems[currentGame];
+  document.querySelectorAll('#gameOptions .option').forEach(btn=>{
+    btn.disabled=true;
+    if(btn.textContent===item.answer) btn.classList.add('correct');
+  });
+  if(choice!==item.answer){
+    button.classList.add('wrong');
+    document.getElementById('gameFeedback').textContent=`Belum tepat. Jawaban yang lebih sesuai: ${item.answer}. ${item.feedback}`;
+  }else{
+    document.getElementById('gameFeedback').textContent=item.feedback;
+  }
+  document.getElementById('gameFeedback').classList.add('show');
+}
+function nextGame(){currentGame=(currentGame+1)%gameItems.length;renderGame()}
+function resetGame(){currentGame=0;renderGame()}
+const quizAnswered=new Map();
+document.querySelectorAll('.quiz-card').forEach((card,index)=>{
+  card.querySelectorAll('.option').forEach(option=>{
+    option.addEventListener('click',()=>{
+      if(quizAnswered.has(index))return;
+      const correct=card.dataset.answer;
+      const chosen=option.dataset.option;
+      card.querySelectorAll('.option').forEach(btn=>{
+        btn.disabled=true;
+        if(btn.dataset.option===correct)btn.classList.add('correct');
+      });
+      if(chosen!==correct)option.classList.add('wrong');
+      const explain=card.querySelector('.quiz-explain');
+      if(explain){
+        explain.innerHTML='<strong>Pembahasan:</strong> '+card.dataset.explain;
+        explain.classList.add('show');
+      }
+      quizAnswered.set(index,chosen===correct);
+      updateQuizScore();
+    });
+  });
+});
+function updateQuizScore(){
+  const total=document.querySelectorAll('.quiz-card').length;
+  const score=Array.from(quizAnswered.values()).filter(Boolean).length;
+  document.getElementById('quizScore').textContent=score;
+  const feedback=document.getElementById('quizFeedback');
+  if(quizAnswered.size<total) feedback.textContent='Lanjutkan sampai semua pertanyaan terjawab.';
+  else if(score===total) feedback.textContent='Mantap. Kamu sudah memahami materi melalui kasus yang diberikan.';
+  else if(score>=Math.ceil(total*0.7)) feedback.textContent='Bagus. Coba teliti lagi hubungan antara kasus dan konsep materinya.';
+  else feedback.textContent='Ayo ulangi. Baca lagi kasusnya dan perhatikan alasan setiap jawaban.';
+}
+function resetQuiz(){
+  quizAnswered.clear();
+  document.getElementById('quizScore').textContent='0';
+  document.getElementById('quizFeedback').textContent='Jawab pertanyaan, lalu baca pembahasan singkatnya.';
+  document.querySelectorAll('.quiz-card').forEach(card=>{
+    card.querySelectorAll('.option').forEach(btn=>{
+      btn.disabled=false; btn.classList.remove('correct','wrong');
+    });
+    const explain=card.querySelector('.quiz-explain');
+    if(explain){explain.classList.remove('show'); explain.textContent='';}
+  });
+}
+renderGame();
+</script>
+</body>
+</html>
